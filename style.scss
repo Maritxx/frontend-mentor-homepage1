@@ -11,14 +11,13 @@ body {
 
 /*Font Styling*/
 h1 {
-	font-size: 2.5rem;
+	font-size: 3rem;
 	font-weight: 700;
 	color: var(--heading-primary);
 }
 
 
 h2 {
-	font-size: 0.75rem;
 	font-weight: 600;
 	color: var(--heading-primary);
 	text-transform: uppercase;
@@ -27,14 +26,12 @@ h2 {
 
 
 p {
-	font-size: 0.75rem;
 	font-weight: 500;
 	color: var(--text-primary);
 }
 
 
 .shop-now__text {
-	font-size: 0.75rem;
 	font-weight: 600;
 	color: var(--heading-primary);
 	text-transform: uppercase;
@@ -88,7 +85,7 @@ p {
 
 
 .hero-image__holder {
-	picture {
+	img {
 		max-width: 100%;
 		/*object-fit: cover;*/
 	}
@@ -102,7 +99,7 @@ p {
 .hero-content__holder {
 	.hero-text__slide {
 		padding: 40px 80px;
-		max-width: 350px;
+		max-width: 550px;
 		margin: 0 auto;
 	}
 

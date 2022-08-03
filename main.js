@@ -30,7 +30,7 @@ function showPicture(p) {
 		slidePicture = 1
 	};
 
-	if (p < 1) {
+	if (p < 1 ) {
 		slidePicture = pictureSlides.length
 	};
 
@@ -63,15 +63,18 @@ function showText(t) {
 
 
 
-
-$("#buttonPrevious").click(function() {
-	changePicture(-1);
-	changeText(-1);
+$(function() {
+	$("#buttonPrevious").click(function() {
+		changePicture(-1);
+		changeText(-1);
+	});
 });
 
 
-$("#buttonNext").click(function() {
-	changePicture(1);
-	changeText(1);
+$(function() {
+	$("#buttonNext").click(function() {
+		changePicture(1);
+		changeText(1);
+	});
 });
 
