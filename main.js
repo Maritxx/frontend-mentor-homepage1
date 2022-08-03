@@ -2,27 +2,76 @@
 //Syntax goes $(selector).action();
 //Selector finds/selects an HTML element.
 
-function pageHeight()  {
-	var headerHeight = $("header").outerHeight();
-	//Outerheight gets the height (including padding/border/margin) for the first element that matches the selector.
-	//Sets a variable that gets the height from the header.
+let slidePicture = 1;
+let slideText = 1;
+showPicture(slidePicture);
+showText(slideText);
 
-	var footerHeight = $("footer").outerHeight();
-	//Sets a variable that gets the height from the footer.
 
-	var remainHeight = headerHeight + footerHeight;
-	//Sets a variable that is the sum of both the header and footer.
 
-	$("main").css("min-height", "calc(100vh - " + remainHeight + "px)");
-	//.css can be used to set a style property for the selected element. 
-	//When setting the style, select the property you wish to change, followed by the value it should get.
-	//Changes the min-height of 'main' to be 100vh minus the height of the footer and header.
-}
 
-$(window).on("load resize orientationchange", function () {
-	pageHeight();
+function changePicture(p) {
+	showPicture(slidePicture += p);
+};
+
+
+function changeText(t) {
+	showText(slideText += t);
+};
+
+
+
+
+function showPicture(p) {
+	let indexp;
+	let pictureSlides = $("#pictureSlide");
+
+	if (p > pictureSlides.length) {
+		slidePicture = 1
+	};
+
+	if (p < 1) {
+		slidePicture = pictureSlides.length
+	};
+
+	for (indexp = 0; indexp < pictureSlides.length; indexp++) {
+		pictureSlides[indexp].style.display = "none";
+	};
+
+	pictureSlides[slidePicture - 1].style.display = "block";
+};
+
+
+function showText(t) {
+	let indext;
+	let textSlides = $("#textSlide");
+
+	if (t > textSlides.length) {
+		slideText = 1
+	};
+
+	if (t < 1) {
+		slideText = textSlides.length
+	};
+
+	for (indext = 0; indext < textSlides.length; indext++) {
+		textSlides[indext].style.display = "none";
+	};
+
+	textSlides[slideText - 1].style.display = "block";
+};
+
+
+
+
+$("#buttonPrevious").click(function() {
+	changePicture(-1);
+	changeText(-1);
 });
-//The 'window' selector represents an open window in the browser.
-//The .on action attaches one or more event handlers to the selected element.
-//The function within the .on action specifies that it needs a function to run.
-//Runs the pageHeight function when the page gets loaded, resized or if the orientation (portrait or landscape) is changed. 
+
+
+$("#buttonNext").click(function() {
+	changePicture(1);
+	changeText(1);
+});
+
