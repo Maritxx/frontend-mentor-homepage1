@@ -9,6 +9,23 @@ showText(slideText);
 
 
 
+$(function() {
+	$("#buttonPrevious").click(function() {
+		changePicture(-1);
+		changeText(-1);
+	});
+});
+
+
+$(function() {
+	$("#buttonNext").click(function() {
+		changePicture(1);
+		changeText(1);
+	});
+});
+
+
+
 
 function changePicture(p) {
 	showPicture(slidePicture += p);
@@ -60,21 +77,3 @@ function showText(t) {
 
 	textSlides[slideText - 1].style.display = "block";
 };
-
-
-
-$(function() {
-	$("#buttonPrevious").click(function() {
-		changePicture(-1);
-		changeText(-1);
-	});
-});
-
-
-$(function() {
-	$("#buttonNext").click(function() {
-		changePicture(1);
-		changeText(1);
-	});
-});
-
