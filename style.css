@@ -60,9 +60,6 @@ header {
 }
 
 /*Hero Section Styling*/
-.hero-section {
-  position: relative;
-}
 @media all and (min-width: 782px) {
   .hero-section {
     display: flex;
@@ -93,6 +90,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .hero-content__holder .hero-text__slide {
   padding: 40px;
@@ -112,18 +110,18 @@ header {
   width: 100%;
   background-color: var(--heading-primary);
   position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: calc(100% - 61px);
+  bottom: 0;
+  left: 0;
 }
 @media all and (min-width: 782px) {
   .hero-navigation__holder {
     padding: 15px;
     max-width: 140px;
-    margin-right: calc(40% - 140px);
-    bottom: 0;
-    top: unset;
-    margin-top: unset;
+    bottom: unset;
+    left: unset;
+    top: 0;
+    margin-top: -49px;
+    right: 0;
   }
 }
 
@@ -156,6 +154,9 @@ header {
     justify-content: center;
     padding: 40px;
   }
+}
+.about-content__holder .about-text__holder {
+  padding: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
