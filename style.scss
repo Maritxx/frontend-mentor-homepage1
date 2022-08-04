@@ -52,8 +52,13 @@ p {
 /*Header Styling*/
 header {
 	position: absolute;
-	padding: 40px;
+	padding: 80px 40px;
 	z-index: 1;
+
+	@media all and (min-width: 782px) {
+		padding: 80px;
+		width: 60%;
+	}
 }
 
 
@@ -66,14 +71,40 @@ header {
 		}
 	}
 
+
 	&__desktop {
 		display: none;
 
 		@media all and (min-width: 782px) {
-			display: block;
+			display: flex;
+			max-width: 100%;
+		}
+
+		.logo__holder {
+			padding-right: 80px;
+
+			img {
+				min-height: 100%;
+				display: block;
+			}
+		}
+		.desktop-navigation__holder {
+			max-width: 100%;
+
+			nav {
+				ul {
+					display: flex;
+
+					li {
+						padding-right: 40px;
+						color: var(--bg-primary);
+					}
+				}
+			}
 		}
 	}
 }
+
 
 
 
@@ -141,7 +172,7 @@ header {
 
 	@media all and (min-width: 782px) {
 		padding: 15px;
-		max-width: 140px;
+		max-width: 23.8%;
 		top: unset;
 		right: unset;
 		margin-top: unset;
@@ -184,10 +215,10 @@ header {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: 40px;
 	}
 
 	.about-text__holder {
 		padding: 40px;
+		max-width: 550px;
 	}
 }

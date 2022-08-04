@@ -38,8 +38,14 @@ p {
 /*Header Styling*/
 header {
   position: absolute;
-  padding: 40px;
+  padding: 80px 40px;
   z-index: 1;
+}
+@media all and (min-width: 782px) {
+  header {
+    padding: 80px;
+    width: 60%;
+  }
 }
 
 .header-holder__mobile {
@@ -55,8 +61,26 @@ header {
 }
 @media all and (min-width: 782px) {
   .header-holder__desktop {
-    display: block;
+    display: flex;
+    max-width: 100%;
   }
+}
+.header-holder__desktop .logo__holder {
+  padding-right: 80px;
+}
+.header-holder__desktop .logo__holder img {
+  min-height: 100%;
+  display: block;
+}
+.header-holder__desktop .desktop-navigation__holder {
+  max-width: 100%;
+}
+.header-holder__desktop .desktop-navigation__holder nav ul {
+  display: flex;
+}
+.header-holder__desktop .desktop-navigation__holder nav ul li {
+  padding-right: 40px;
+  color: var(--bg-primary);
 }
 
 /*Hero Section Styling*/
@@ -117,7 +141,7 @@ header {
 @media all and (min-width: 782px) {
   .hero-navigation__holder {
     padding: 15px;
-    max-width: 140px;
+    max-width: 23.8%;
     top: unset;
     right: unset;
     margin-top: unset;
@@ -153,11 +177,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px;
   }
 }
 .about-content__holder .about-text__holder {
   padding: 40px;
+  max-width: 550px;
 }
 
 /*# sourceMappingURL=style.css.map */
