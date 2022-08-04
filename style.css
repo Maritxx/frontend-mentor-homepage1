@@ -9,6 +9,7 @@ h1 {
   font-size: 3rem;
   font-weight: 700;
   color: var(--heading-primary);
+  padding-bottom: 30px;
 }
 
 h2 {
@@ -16,6 +17,7 @@ h2 {
   color: var(--heading-primary);
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+  padding-bottom: 20px;
 }
 
 p {
@@ -27,7 +29,14 @@ p {
   font-weight: 600;
   color: var(--heading-primary);
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.7rem;
+  display: block;
+  padding-top: 40px;
+}
+@media all and (min-width: 782px) {
+  .shop-now__text {
+    padding-top: 20px;
+  }
 }
 .shop-now__text::after {
   content: url("img/icon-arrow.svg");
@@ -44,8 +53,7 @@ header {
 }
 @media all and (min-width: 782px) {
   header {
-    max-width: calc(60% - 160px);
-    width: 100%;
+    max-width: calc(60vw - 160px);
     left: 80px;
   }
 }
