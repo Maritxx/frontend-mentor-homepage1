@@ -36,6 +36,12 @@ p {
 }
 
 /*Header Styling*/
+header {
+  position: absolute;
+  padding: 40px;
+  z-index: 1;
+}
+
 .header-holder__mobile {
   display: block;
 }
@@ -64,14 +70,22 @@ p {
   }
 }
 
-.hero-image__holder img {
-  max-width: 100%;
-  /*object-fit: cover;*/
-}
 @media all and (min-width: 782px) {
   .hero-image__holder {
     flex: 0 1 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
+}
+.hero-image__holder picture {
+  min-width: 100%;
+  min-height: 100%;
+}
+.hero-image__holder picture img {
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .hero-content__holder .hero-text__slide {
@@ -95,14 +109,47 @@ p {
   position: absolute;
   top: 0;
   right: 0;
-  margin-top: calc(50% - 44px);
+  margin-top: calc(50% - 49px);
 }
 @media all and (min-width: 782px) {
   .hero-navigation__holder {
     padding: 15px;
     max-width: 140px;
     margin-right: calc(40% - 140px);
-    margin-top: calc(100% - 54px);
+    bottom: 0;
+    top: unset;
+    margin-top: unset;
+  }
+}
+
+/*About me Section*/
+@media all and (min-width: 782px) {
+  .about-section {
+    display: flex;
+    /*height: 33vh*/
+  }
+}
+
+.about-image__holder {
+  overflow: hidden;
+}
+@media all and (min-width: 782px) {
+  .about-image__holder {
+    flex: 0 1 33%;
+  }
+}
+.about-image__holder img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+@media all and (min-width: 782px) {
+  .about-content__holder {
+    flex: 0 1 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
   }
 }
 
