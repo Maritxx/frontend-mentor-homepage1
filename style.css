@@ -110,18 +110,19 @@ header {
   width: 100%;
   background-color: var(--heading-primary);
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 0;
+  margin-top: -49px;
+  right: 0;
 }
 @media all and (min-width: 782px) {
   .hero-navigation__holder {
     padding: 15px;
     max-width: 140px;
-    bottom: unset;
-    left: unset;
-    top: 0;
-    margin-top: -49px;
-    right: 0;
+    top: unset;
+    right: unset;
+    margin-top: unset;
+    bottom: 0;
+    left: 0;
   }
 }
 
