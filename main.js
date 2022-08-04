@@ -21,6 +21,7 @@ $(function() {
 	$("#buttonNext").click(function() {
 		changePicture(1);
 		changeText(1);
+		console.log("button is clicked");
 	});
 });
 
@@ -29,6 +30,7 @@ $(function() {
 
 function changePicture(p) {
 	showPicture(slidePicture += p);
+	console.log("change picture is running");
 };
 
 
@@ -53,6 +55,7 @@ function showPicture(p) {
 
 	for (indexp = 0; indexp < pictureSlides.length; indexp++) {
 		pictureSlides[indexp].style.display = "none";
+		console.log("this should be hidden");
 	};
 
 	pictureSlides[slidePicture - 1].style.display = "block";
