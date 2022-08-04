@@ -66,17 +66,17 @@ header {
 @media all and (min-width: 782px) {
   .hero-section {
     display: flex;
-    /*height: 66vh*/
+    height: 66.66vh;
   }
 }
 
+.hero-image__holder {
+  display: flex;
+  overflow: hidden;
+}
 @media all and (min-width: 782px) {
   .hero-image__holder {
     flex: 0 1 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
   }
 }
 .hero-image__holder picture {
@@ -88,10 +88,15 @@ header {
   min-height: 100%;
 }
 
+.hero-content__holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .hero-content__holder .hero-text__slide {
-  padding: 40px 80px;
+  padding: 40px;
   max-width: 550px;
-  margin: 0 auto;
 }
 @media all and (min-width: 782px) {
   .hero-content__holder {
@@ -109,7 +114,7 @@ header {
   position: absolute;
   top: 0;
   right: 0;
-  margin-top: calc(50% - 49px);
+  margin-top: calc(100% - 61px);
 }
 @media all and (min-width: 782px) {
   .hero-navigation__holder {
@@ -126,7 +131,7 @@ header {
 @media all and (min-width: 782px) {
   .about-section {
     display: flex;
-    /*height: 33vh*/
+    height: 33.33vh;
   }
 }
 
