@@ -43,7 +43,7 @@ function changeText(t) {
 
 function showPicture(p) {
 	let indexp;
-	let pictureSlides = $("#pictureSlide");
+	let pictureSlides = $(".pictureSlide");
 
 	if (p > pictureSlides.length) {
 		slidePicture = 1
@@ -64,7 +64,7 @@ function showPicture(p) {
 
 function showText(t) {
 	let indext;
-	let textSlides = $("#textSlide");
+	let textSlides = $(".textSlide");
 
 	if (t > textSlides.length) {
 		slideText = 1
@@ -76,7 +76,7 @@ function showText(t) {
 
 	for (indext = 0; indext < textSlides.length; indext++) {
 		textSlides[indext].style.display = "none";
-	};
+	}
 
 	textSlides[slideText - 1].style.display = "block";
 };
