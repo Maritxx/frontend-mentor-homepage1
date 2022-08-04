@@ -52,12 +52,14 @@ p {
 /*Header Styling*/
 header {
 	position: absolute;
-	padding: 80px 40px;
 	z-index: 1;
+	top: 80px;
+	left: 40px;
 
 	@media all and (min-width: 782px) {
-		padding: 80px;
-		width: 60%;
+		max-width: calc(60% - 160px);
+		width: 100%;
+		left: 80px;
 	}
 }
 
@@ -84,7 +86,7 @@ header {
 			padding-right: 80px;
 
 			img {
-				min-height: 100%;
+				min-width: 62px;
 				display: block;
 			}
 		}
@@ -115,7 +117,7 @@ header {
 .hero-section {
 	@media all and (min-width: 782px) {
 		display: flex;
-		height: 66.66vh;
+		height: 66.66%;
 	}
 }
 
@@ -172,7 +174,7 @@ header {
 
 	@media all and (min-width: 782px) {
 		padding: 15px;
-		max-width: 23.8%;
+		max-width: 22.2%;
 		top: unset;
 		right: unset;
 		margin-top: unset;
@@ -190,7 +192,7 @@ header {
 .about-section {
 	@media all and (min-width: 782px) {
 		display: flex;
-		height: 33.33vh
+		height: 33.33%;
 	}
 }
 
