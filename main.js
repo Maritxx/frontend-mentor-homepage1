@@ -112,3 +112,24 @@ $(window).on("load resize orientationchange", function() {
 
 
 
+
+
+
+
+
+function dropdownMenu() {
+	$(".mobile-menu__dropdown").toggleClass("expand");
+}
+
+
+function navToggle() {
+	$("#nav-icon").toggleClass("open");
+}
+
+
+$("div#nav-icon").click(funtion() {
+	dropdownMenu();
+	navToggle();
+});
+
+
