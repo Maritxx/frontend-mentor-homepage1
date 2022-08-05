@@ -65,7 +65,7 @@ p {
 header {
 	position: absolute;
 	z-index: 1;
-	top: 80px;
+	top: 60px;
 	left: 40px;
 
 	@media all and (min-width: 782px) {
@@ -156,7 +156,8 @@ header {
 			.mobile-menu__dropdown {
 				display: none;
 				position: absolute;
-				width: 100%;
+				width: 100vw;
+				left: -40px;
 				background-color: var(--bg-primary);
 				z-index: 2;
 
