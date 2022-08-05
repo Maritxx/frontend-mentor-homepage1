@@ -89,11 +89,6 @@ function showText(t) {
 var wWidth = $(window).width();
 var wHeight = $(window).height();
 
-$(window).on("load resize orientationchange", function () {
-	var wWidth = $(window).width();
-	var wHeight = $(window).height();
-});
-
 
 function heroHeight() {
 	var aboutHeight = $("section.about-section").height();
@@ -102,12 +97,18 @@ function heroHeight() {
 }
 
 
-if (wWidth >= 1196 && wHeight >= 796 ) {
-	heroHeight();
-} else {
-	$("section.hero-section").css("height", "auto");
-}
 
+
+$(window).on("load resize orientationchange", function () {
+	var wWidth = $(window).width();
+	var wHeight = $(window).height();
+
+	if (wWidth >= 1196 && wHeight >= 796 ) {
+		heroHeight();
+	} else {
+		$("section.hero-section").css("height", "auto");
+	}
+});
 
 
 
