@@ -89,7 +89,7 @@ function showText(t) {
 
 
 function heroHeight() {
-	var aboutHeight = $("section.about-section").outerheight();
+	var aboutHeight = $("section.about-section").outerHeight();
 
 	$("section.hero-section").css("height", "calc(100vh - " + aboutHeight + "px)");
 }
