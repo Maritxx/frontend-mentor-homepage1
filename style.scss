@@ -63,7 +63,13 @@ a {
 
 
 li {
-	font-weight: 700;
+	font-weight: 600;
+
+	a {
+		&:hover {
+			border-bottom: 2px solid;
+		}
+	}
 }
 
 

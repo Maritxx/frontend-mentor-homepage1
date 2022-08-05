@@ -53,7 +53,10 @@ a.shop-now__text:hover {
 }
 
 li {
-  font-weight: 700;
+  font-weight: 600;
+}
+li a:hover {
+  border-bottom: 2px solid;
 }
 
 /*Header Styling*/
