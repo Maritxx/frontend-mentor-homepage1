@@ -94,6 +94,8 @@ function heroHeight() {
 	var aboutHeight = $("section.about-section").height();
 
 	$("section.hero-section").css("height", "calc(" + wHeight - aboutHeight + "px)");
+	console.log(aboutHeight);
+	console.log(wHeight);
 }
 
 
@@ -102,6 +104,7 @@ function heroHeight() {
 $(window).on("load resize orientationchange", function () {
 	wWidth = $(window).width();
 	wHeight = $(window).height();
+	console.log(vWidth);
 
 	if (wWidth >= 1196 && wHeight >= 796 ) {
 		heroHeight();
