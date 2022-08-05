@@ -96,12 +96,12 @@ $(window).on("load resize orientationchange", function () {
 
 
 function heroHeight() {
-	var aboutHeight = $("section.about-section").outerHeight();
+	var aboutHeight = $("section.about-section").height();
 
 	$("section.hero-section").css("height", "calc(" + wHeight - aboutHeight + "px)");
 }
 
-if (wWidth >= 1196 && wHeight >= 796 ) {
+if (wWidth >= 1196 || wHeight >= 796 ) {
 	heroHeight();
 } else {
 	$("section.hero-section").css("height", "auto");
