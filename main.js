@@ -101,7 +101,8 @@ function heroHeight() {
 	$("section.hero-section").css("height", "calc(" + wHeight - aboutHeight + "px)");
 }
 
-if (wWidth >= 1196 || wHeight >= 796 ) {
+
+if (wWidth >= 1196 && wHeight >= 796 ) {
 	heroHeight();
 } else {
 	$("section.hero-section").css("height", "auto");
