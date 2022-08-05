@@ -132,6 +132,8 @@ header {
   position: absolute;
   width: 100vw;
   left: -40px;
+  top: -60px;
+  padding: 35px;
   background-color: var(--bg-primary);
   z-index: 2;
 }
