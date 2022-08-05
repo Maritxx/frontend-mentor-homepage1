@@ -11,15 +11,19 @@ body {
 
 /*Font Styling*/
 h1 {
-	font-size: 3rem;
+	font-size: 2.4rem;
 	font-weight: 700;
 	color: var(--heading-primary);
 	padding-bottom: 30px;
+
+	@media all and (min-width: 782px) {
+		font-size: 3rem;
+	}
 }
 
 
 h2 {
-	font-weight: 600;
+	font-weight: 700;
 	color: var(--heading-primary);
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
@@ -217,11 +221,12 @@ header {
 
 
 .about-content__holder {
+	display: flex;
+	align-items: center;		
+	justify-content: center;
+
 	@media all and (min-width: 782px) {
 		flex: 0 1 40%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 	}
 
 	.about-text__holder {
