@@ -97,7 +97,6 @@ header {
 @media all and (min-width: 782px) {
   .hero-section {
     display: flex;
-    height: 66.66%;
   }
 }
 
@@ -164,7 +163,6 @@ header {
 @media all and (min-width: 782px) {
   .about-section {
     display: flex;
-    height: 33.33%;
   }
 }
 
