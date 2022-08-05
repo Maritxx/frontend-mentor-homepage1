@@ -85,14 +85,6 @@ function showText(t) {
 
 
 
-function heroHeight() {
-	var aboutHeight = $("section.about-section").outerHeight();
-
-	$("section.hero-section").css("height", "calc(100vh - " + aboutHeight + "px)");
-}
-
-
-
 
 var wWidth = $(window).width();
 var wHeight = $(window).height();
@@ -102,8 +94,19 @@ $(window).on("load resize orientationchange", function () {
 	var wHeight = $(window).height();
 });
 
+
+function heroHeight() {
+	var aboutHeight = $("section.about-section").outerHeight();
+
+	$("section.hero-section").css("height", "calc(" + wHeight - aboutHeight + "px)");
+}
+
 if (wWidth >= 1196 && wHeight >= 796 ) {
 	heroHeight();
 } else {
 	$("section.hero-section").css("height", "auto");
 }
+
+
+
+
