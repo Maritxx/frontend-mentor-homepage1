@@ -94,8 +94,6 @@ function heroHeight() {
 	var aboutHeight = $("section.about-section").height();
 
 	$("section.hero-section").outerHeight(wHeight - aboutHeight);
-	console.log(aboutHeight);
-	console.log(wHeight);
 }
 
 
@@ -104,9 +102,8 @@ function heroHeight() {
 $(window).on("load resize orientationchange", function() {
 	wWidth = $(window).width();
 	wHeight = $(window).height();
-	console.log(wWidth);
 
-	if (wWidth >= 1196 && wHeight >= 796 ) {
+	if (wWidth >= 1196 || wHeight >= 796 ) {
 		heroHeight();
 	} else {
 		$("section.hero-section").css("height", "auto");
