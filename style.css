@@ -64,12 +64,80 @@ header {
 }
 
 .header-holder__mobile {
-  display: block;
+  display: flex;
+  width: calc(100vw - 80px);
 }
 @media all and (min-width: 782px) {
   .header-holder__mobile {
     display: none;
   }
+}
+.header-holder__mobile .mobile-navigation__holder {
+  flex: 0 1 calc(50vw - 62px);
+}
+.header-holder__mobile .mobile-navigation__holder #nav-icon {
+  width: 30px;
+  height: 25px;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+}
+.header-holder__mobile .mobile-navigation__holder #nav-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: var(--bg-primary);
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.header-holder__mobile .mobile-navigation__holder #nav-icon span:nth-child(1) {
+  top: 0px;
+}
+.header-holder__mobile .mobile-navigation__holder #nav-icon span:nth-child(2), .header-holder__mobile .mobile-navigation__holder #nav-icon span:nth-child(3) {
+  top: 10px;
+}
+.header-holder__mobile .mobile-navigation__holder #nav-icon span:nth-child(4) {
+  top: 20px;
+}
+.header-holder__mobile .mobile-navigation__holder #nav-icon.open span:nth-child(1), .header-holder__mobile .mobile-navigation__holder #nav-icon.open span:nth-child(4) {
+  top: 10px;
+  left: 50%;
+  width: 0%;
+}
+.header-holder__mobile .mobile-navigation__holder #nav-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.header-holder__mobile .mobile-navigation__holder #nav-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.header-holder__mobile .mobile-navigation__holder .mobile-menu__dropdown {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: var(--bg-primary);
+  z-index: 2;
+}
+.header-holder__mobile .mobile-navigation__holder .mobile-menu__dropdown.expand {
+  display: block;
+}
+.header-holder__mobile .logo__holder {
+  flex: 0 1 50vw;
 }
 .header-holder__desktop {
   display: none;
