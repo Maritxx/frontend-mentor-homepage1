@@ -100,8 +100,8 @@ function heroHeight() {
 
 
 $(window).on("load resize orientationchange", function () {
-	var wWidth = $(window).width();
-	var wHeight = $(window).height();
+	wWidth = $(window).width();
+	wHeight = $(window).height();
 
 	if (wWidth >= 1196 && wHeight >= 796 ) {
 		heroHeight();
