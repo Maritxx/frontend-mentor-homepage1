@@ -79,6 +79,7 @@ header {
 	&__mobile {
 		display: flex;
 		width: calc(100vw - 80px);
+		align-items: center;
 
 		@media all and (min-width: 782px) {
 			display: none;
@@ -168,6 +169,10 @@ header {
 
 		.logo__holder {
 			flex: 0 1 50vw;
+
+			img {
+				display: block;
+			}
 		}
 	}
 

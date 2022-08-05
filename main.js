@@ -127,7 +127,7 @@ function navToggle() {
 }
 
 
-$("div#nav-icon").click(funtion() {
+$("div#nav-icon").click(function() {
 	dropdownMenu();
 	navToggle();
 });
