@@ -140,7 +140,8 @@ header {
 							-webkit-transform: rotate(45deg);
 							-moz-transform: rotate(45deg);
 							-o-transform: rotate(45deg);
-							transform: rotate(45deg);	
+							transform: rotate(45deg);
+							background: var(--text-primary);	
 						}
 
 						&:nth-child(3) {
@@ -148,6 +149,7 @@ header {
 							-moz-transform: rotate(-45deg);
 							-o-transform: rotate(-45deg);
 							transform: rotate(-45deg);
+							background: var(--text-primary);
 						}
 					}
 				}
@@ -157,14 +159,29 @@ header {
 				display: none;
 				position: absolute;
 				width: 100vw;
+				height: 145px;
 				left: -40px;
 				top: -60px;
-				padding: 35px;
 				background-color: var(--bg-primary);
 				z-index: 2;
 
 				&.expand {
 					display: block;
+				}
+
+				nav {
+					height: 100%;
+
+					ul {
+						display: flex;
+						justify-content: flex-end;
+						align-items: center;
+						height: 100%;
+
+						li {
+							padding-right: 20px;
+						}
+					}
 				}
 			}
 		}

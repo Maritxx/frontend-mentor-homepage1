@@ -120,25 +120,39 @@ header {
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
+  background: var(--text-primary);
 }
 .header-holder__mobile .mobile-navigation__holder #nav-icon.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
+  background: var(--text-primary);
 }
 .header-holder__mobile .mobile-navigation__holder .mobile-menu__dropdown {
   display: none;
   position: absolute;
   width: 100vw;
+  height: 145px;
   left: -40px;
   top: -60px;
-  padding: 35px;
   background-color: var(--bg-primary);
   z-index: 2;
 }
 .header-holder__mobile .mobile-navigation__holder .mobile-menu__dropdown.expand {
   display: block;
+}
+.header-holder__mobile .mobile-navigation__holder .mobile-menu__dropdown nav {
+  height: 100%;
+}
+.header-holder__mobile .mobile-navigation__holder .mobile-menu__dropdown nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+.header-holder__mobile .mobile-navigation__holder .mobile-menu__dropdown nav ul li {
+  padding-right: 20px;
 }
 .header-holder__mobile .logo__holder {
   flex: 0 1 50vw;
