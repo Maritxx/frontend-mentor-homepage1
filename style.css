@@ -30,7 +30,7 @@ p {
   color: var(--text-primary);
 }
 
-.shop-now__text {
+a.shop-now__text {
   font-weight: 600;
   color: var(--heading-primary);
   text-transform: uppercase;
@@ -39,14 +39,17 @@ p {
   padding-top: 40px;
 }
 @media all and (min-width: 782px) {
-  .shop-now__text {
+  a.shop-now__text {
     padding-top: 20px;
   }
 }
-.shop-now__text::after {
+a.shop-now__text::after {
   content: url("img/icon-arrow.svg");
   padding-left: 15px;
   vertical-align: middle;
+}
+a.shop-now__text:hover {
+  color: var(--text-primary);
 }
 
 li {
@@ -246,10 +249,8 @@ header {
 .hero-navigation__holder {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
   max-width: 120px;
   width: 100%;
-  background-color: var(--heading-primary);
   position: absolute;
   top: 0;
   margin-top: -49px;
@@ -257,7 +258,6 @@ header {
 }
 @media all and (min-width: 782px) {
   .hero-navigation__holder {
-    padding: 15px;
     max-width: 22.2%;
     top: unset;
     right: unset;
@@ -265,6 +265,19 @@ header {
     bottom: 0;
     left: 0;
   }
+}
+.hero-navigation__holder button {
+  padding: 10px 0px;
+  width: 50%;
+  background-color: var(--heading-primary);
+}
+@media all and (min-width: 782px) {
+  .hero-navigation__holder button {
+    padding: 15px 0px;
+  }
+}
+.hero-navigation__holder button:hover {
+  background-color: var(--hover-primary);
 }
 
 /*About me Section*/

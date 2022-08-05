@@ -103,7 +103,7 @@ $(window).on("load resize orientationchange", function() {
 	wWidth = $(window).width();
 	wHeight = $(window).height();
 
-	if (wWidth >= 1196 && wHeight >= 796) {
+	if (wWidth >= 1196 && wHeight >= 806) {
 		heroHeight();
 	} else {
 		$("section.hero-section").css("height", "auto");
