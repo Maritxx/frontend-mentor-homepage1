@@ -94,6 +94,9 @@ function heroHeight() {
 
 
 
+var wWidth = $(window).width();
+var wHeight = $(window).height();
+
 $(window).on("load resize orientationchange", function () {
 	var wWidth = $(window).width();
 	var wHeight = $(window).height();
