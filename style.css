@@ -49,6 +49,10 @@ p {
   vertical-align: middle;
 }
 
+li {
+  font-weight: 700;
+}
+
 /*Header Styling*/
 header {
   position: absolute;
@@ -185,6 +189,16 @@ header {
 .header-holder__desktop .desktop-navigation__holder nav ul li {
   padding-right: 25px;
   color: var(--bg-primary);
+}
+
+#overlay.active {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(20, 20, 20, 0.5);
 }
 
 /*Hero Section Styling*/

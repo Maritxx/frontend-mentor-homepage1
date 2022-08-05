@@ -127,9 +127,15 @@ function navToggle() {
 }
 
 
+function overlayToggle() {
+	$("#overlay").toggleClass("active");
+}
+
+
 $("div#nav-icon").click(function() {
 	dropdownMenu();
 	navToggle();
+	overlayToggle();
 });
 
 
