@@ -54,7 +54,7 @@ header {
 @media all and (min-width: 782px) {
   header {
     max-width: calc(60vw - 160px);
-    left: 80px;
+    left: 60px;
   }
 }
 
@@ -76,7 +76,7 @@ header {
   }
 }
 .header-holder__desktop .logo__holder {
-  padding-right: 80px;
+  padding-right: 50px;
 }
 .header-holder__desktop .logo__holder img {
   min-width: 62px;
@@ -89,7 +89,7 @@ header {
   display: flex;
 }
 .header-holder__desktop .desktop-navigation__holder nav ul li {
-  padding-right: 40px;
+  padding-right: 25px;
   color: var(--bg-primary);
 }
 
