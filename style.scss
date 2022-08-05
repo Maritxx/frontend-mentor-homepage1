@@ -66,6 +66,8 @@ li {
 	font-weight: 600;
 
 	a {
+		border-bottom: 2px solid transparent;
+
 		&:hover {
 			border-bottom: 2px solid;
 		}

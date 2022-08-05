@@ -55,6 +55,9 @@ a.shop-now__text:hover {
 li {
   font-weight: 600;
 }
+li a {
+  border-bottom: 2px solid transparent;
+}
 li a:hover {
   border-bottom: 2px solid;
 }
